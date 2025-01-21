@@ -1,0 +1,8 @@
+Line coding is a key process in digital communication systems that involves converting digital data into a signal suitable for transmission over a communication channel. 
+Unlike analog signals, digital data needs to be encoded in a way that ensures it can be effectively transmitted and interpreted at the receiver.
+Line coding helps maintain signal integrity, providing synchronization between the transmitter and receiver, and ensuring efficient use of the communication channel.
+There are many techniques for Line coding, but here are the examples that we worked on: 
+1)Unipolar coding: a simple code where the binary ‘1’ can be represented by either a positive voltage or zero voltage, and the binary ’0’ is represented by the other of them.
+2)Polar NRZ-L (Non-Return-to-Zero-Level): the binary ‘1’ can be represented by either a positive voltage or negative voltage, and the binary ’0’ is represented by the other of them. (the signal does not return to zero level within bit period(Tb))
+3)Polar RZ (Return-to-Zero): the binary ‘1’ can be represented by a positive voltage for half of the bit period, and the binary ’0’ is represented by negative voltage for half of the bit period, the signal returns to zero level for the other half of the bit period providing better synchronization and maintaining DC balance.
+4)Manchester Coding: manchester encoding uses a level inversion at the middle of each bit interval for both synchronization and bit representation, a negative-to-positive transition represents the binary ‘1’, and a positive-to-negative transition represents the binary ’0’. Manchester encoding is self-clocking, it achieves the same level of synchronization of polar RZ but with only 2 levels of amplitudes, it also eliminates the DC component.
